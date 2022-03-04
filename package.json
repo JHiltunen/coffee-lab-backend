@@ -1,0 +1,27 @@
+{
+  "name": "coffee-lab-backend",
+  "version": "1.0.0",
+  "description": "Allows you to save information about your favourite coffees.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHiltunen/coffee-lab-backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "coffee",
+    "backend"
+  ],
+  "author": "Joonas Hiltunen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JHiltunen/coffee-lab-backend/issues"
+  },
+  "homepage": "https://github.com/JHiltunen/coffee-lab-backend#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
