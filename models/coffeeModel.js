@@ -4,8 +4,6 @@ const { fileExists } = require("../utils/fileHandler");
 
 const fs = require('fs');
 
-var coffeeData;
-
 const getAllCoffees = () => {
     
     if (fileExists) {
