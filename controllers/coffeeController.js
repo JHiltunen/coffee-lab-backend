@@ -1,27 +1,29 @@
 'use strict';
-const coffeeModel = require('../models/coffeeModel')
+const coffeeModel = require('../models/coffeeModel');
+
+const fs = require('fs')
 
 const get_coffee_list = (req, res) => {
-    const coffees = coffeeModel.getAllCoffees()
-    
-    res.json( {
-        "coffees": [{
-                "name": "Paulig tummapaahto",
-                "weight": 165.5,
-                "price": 120,
-                "roast_level": "5"
-            },
-            {
-                "name": "Paulig",
-                "weight": 185.5,
-                "price": 230,
-                "roast_level": "2"
-            }
-        ]
-    });
+    res.json(JSON.parse(coffeeModel.getAllCoffees()));
 };
+
+const add_new_coffee = (req, res) => {
+
+    // create coffee object
+    var newCoffee ={
+        name: req.body.name,
+        weight: req.body.weight,
+        price: req.body.price,
+        roast_level: req.body.roast_level,
+    };
+
+    console.log("New coffee: ", newCoffee);
+
+    res.json(coffeeModel.addCoffee(newCoffee));
+}
 
 module.exports = {
     get_coffee_list,
+    add_new_coffee,
 };
 

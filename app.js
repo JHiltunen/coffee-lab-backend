@@ -7,6 +7,7 @@ const coffeeRouter = require('./routes/coffeeRouter');
 
 app.use(express.static('public')); // serve static content of public folder. These files can be accessed publicly
 app.use(express.json()); // for parsing application/json
+app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.use('/', coffeeRouter);
 
