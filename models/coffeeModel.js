@@ -14,7 +14,10 @@ const getAllCoffees = () => {
 };
 
 const addCoffee = (coffee) => {
-
+    var coffees = JSON.parse(getAllCoffees());
+    console.log("Before update: ", coffees);
+    coffees['coffees'].push(coffee)
+    console.log("After update: ", coffees);
 };
 
 module.exports = {
