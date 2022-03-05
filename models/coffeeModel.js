@@ -18,6 +18,14 @@ const addCoffee = (coffee) => {
     console.log("Before update: ", coffees);
     coffees['coffees'].push(coffee)
     console.log("After update: ", coffees);
+
+    fs.writeFile('./coffees/coffees.json', JSON.stringify(coffees, null, 4), function(err) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log('JSON saved');
+        }
+    });
 };
 
 module.exports = {

@@ -1,15 +1,28 @@
 {
-	"coffees": [{
-			"name": "Paulig tummapaahto",
-			"weight": 165.5,
-			"price": 120,
-			"roast_level": "5"
-		},
-		{
-			"name": "Paulig",
-			"weight": 185.5,
-			"price": 230,
-			"roast_level": "2"
-		}
-	]
+    "coffees": [
+        {
+            "name": "Paulig tummapaahto",
+            "weight": "165.5",
+            "price": "120",
+            "roast_level": "5"
+        },
+        {
+            "name": "Paulig",
+            "weight": "185.5",
+            "price": "230",
+            "roast_level": "2"
+        },
+        {
+            "name": "Juhlamokka",
+            "weight": "120",
+            "price": "400",
+            "roast_level": "5"
+        },
+        {
+            "name": "Juhlamokka Tummapaahto",
+            "weight": "345",
+            "price": "556",
+            "roast_level": "4"
+        }
+    ]
 }
