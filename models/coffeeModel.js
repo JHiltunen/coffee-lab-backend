@@ -2,11 +2,16 @@
 
 const { fileExists } = require("../utils/fileHandler");
 
+const fs = require('fs');
+
+var coffeeData;
+
 const getAllCoffees = () => {
+    
     if (fileExists) {
-        return 'Jee'
+        return fs.readFileSync('./coffees/coffees.json', 'utf8', function(err, data) {return data});
     } else {
-        return 'Noup'
+        return 'No data available'
     }
 };
 

@@ -7,12 +7,12 @@ const fileExists = () => {
     try {
         if (fs.existsSync(path)) {
             // file exists
-            console.log('File: ' + path + 'exists')
-            return true
+            console.log('File: ' + path + 'exists');
+            return true;
         }
     } catch (error) {
         console.log(error)
-        return false
+        return false;
     }
 };
 
