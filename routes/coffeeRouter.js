@@ -5,8 +5,10 @@ const router = express.Router();
 const coffeeController = require('../controllers/coffeeController')
 
 router.route('/coffees')
-    .get()
+    .get(coffeeController.get_coffee_list)
     .post()
 
 router.route('/coffees/search')
     .get()
+
+module.exports = router;

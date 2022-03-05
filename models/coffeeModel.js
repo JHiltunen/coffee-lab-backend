@@ -1,7 +1,7 @@
 'use strict';
 
 const getAllCoffees = () => {
-
+    
 };
 
 const addCoffee = (coffee) => {
@@ -10,5 +10,5 @@ const addCoffee = (coffee) => {
 
 module.exports = {
     getAllCoffees,
-    addCoffee
-}
+    addCoffee,
+};
