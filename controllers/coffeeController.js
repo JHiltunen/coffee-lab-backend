@@ -26,9 +26,14 @@ const add_new_coffee = (req, res) => {
     res.json(coffeeModel.addCoffee(newCoffee));
 }
 
+const get_coffee_list_search = (req, res) => {
+    res.json(coffeeModel.searchCoffees(searchTerm));
+};
+
 module.exports = {
     not_in_use,
     get_coffee_list,
+    get_coffee_list_search,
     add_new_coffee,
 };
 

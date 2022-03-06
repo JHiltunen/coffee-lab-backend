@@ -12,6 +12,6 @@ router.route('/coffees')
     .post(coffeeController.add_new_coffee)
 
 router.route('/coffees/search')
-    .get()
+    .get(coffeeController.get_coffee_list_search)
 
 module.exports = router;

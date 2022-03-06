@@ -13,6 +13,11 @@ const getAllCoffees = () => {
     }
 };
 
+const searchCoffees = (searchTerm) => {
+    const allCoffees = JSON.parse(getAllCoffees());
+    return allCoffees.coffees.filter((function(coffee){return coffee.name.toLowerCase().includes(searchTerm.toLowerCase())}));
+}
+
 const addCoffee = (coffee) => {
     var coffees = JSON.parse(getAllCoffees());
     console.log("Before update: ", coffees);
@@ -30,5 +35,6 @@ const addCoffee = (coffee) => {
 
 module.exports = {
     getAllCoffees,
+    searchCoffees,
     addCoffee,
 };
