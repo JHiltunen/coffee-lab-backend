@@ -27,6 +27,7 @@ const add_new_coffee = (req, res) => {
 }
 
 const get_coffee_list_search = (req, res) => {
+    const searchTerm = req.query.q;
     res.json(coffeeModel.searchCoffees(searchTerm));
 };
 
