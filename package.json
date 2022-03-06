@@ -23,5 +23,8 @@
   "homepage": "https://github.com/JHiltunen/coffee-lab-backend#readme",
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "engines": {
+    "node": "16.14.0"
   }
 }
