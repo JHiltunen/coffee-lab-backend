@@ -4,7 +4,7 @@
   "description": "Allows you to save information about your favourite coffees.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'test/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,9 @@
   "homepage": "https://github.com/JHiltunen/coffee-lab-backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "mocha": "^9.2.1",
+    "supertest": "^6.2.2"
   },
   "engines": {
     "node": "16.14.0"
