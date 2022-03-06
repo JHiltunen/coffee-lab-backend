@@ -17,11 +17,20 @@ describe('GET /coffees', function() {
     })
 });
 
-describe('GET /coffees/search?q=ds', function() {
+describe('GET /coffees/search?q=juh', function() {
     it('responds with json containing a list of all coffees thats name includes "juh"', function (done) {
         supertest(app)
         .get('/coffees/search?q=juh')
         .expect(/[{ name: 'Juhlamokka', weight: '120', price: '400', roast_level: '5' },{ name: 'Juhlamokka Tummapaahto', weight: '345', price: '556', roast_level: '4' }]/)
+        .expect(200, done);
+    })
+});
+
+describe('GET /coffees/search?q=xy', function() {
+    it('responds with json empty list', function (done) {
+        supertest(app)
+        .get('/coffees/search?q=xy')
+        .expect([])
         .expect(200, done);
     })
 });
