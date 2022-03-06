@@ -3,6 +3,10 @@ const coffeeModel = require('../models/coffeeModel');
 
 const fs = require('fs')
 
+const not_in_use = (req, res) => {
+    res.send('Not in use')
+}
+
 const get_coffee_list = (req, res) => {
     res.json(JSON.parse(coffeeModel.getAllCoffees()));
 };
@@ -23,6 +27,7 @@ const add_new_coffee = (req, res) => {
 }
 
 module.exports = {
+    not_in_use,
     get_coffee_list,
     add_new_coffee,
 };
