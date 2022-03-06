@@ -23,8 +23,6 @@ const add_new_coffee = (req, res) => {
         roast_level: req.body.roast_level,
     };
 
-   // console.log("New coffee: ", newCoffee);
-
     res.json(coffeeModel.addCoffee(newCoffee));
 }
 
