@@ -23,6 +23,12 @@
             "weight": "345",
             "price": "556",
             "roast_level": "4"
+        },
+        {
+            "name": "Cafe roastery",
+            "weight": "560",
+            "price": "750",
+            "roast_level": "3"
         }
     ]
 }
