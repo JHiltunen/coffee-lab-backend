@@ -23,7 +23,17 @@ const add_new_coffee = (req, res) => {
         roast_level: req.body.roast_level,
     };
 
-    res.json(coffeeModel.addCoffee(newCoffee));
+    const result = coffeeModel.addCoffee(newCoffee);
+
+    if (result == -1) {
+        res.json({
+            result: "Failed"
+        })
+    } else {
+        res.json({
+            result: "Saved!"
+        })
+    }
 }
 
 const get_coffee_list_search = (req, res) => {

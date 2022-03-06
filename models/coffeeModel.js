@@ -27,8 +27,10 @@ const addCoffee = (coffee) => {
     fs.writeFile('./coffees/coffees.json', JSON.stringify(coffees, null, 4), function(err) {
         if (err) {
             console.log(err);
+            return false;
         } else {
             console.log('JSON saved');
+            return true;
         }
     });
 };
