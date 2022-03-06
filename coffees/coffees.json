@@ -29,24 +29,6 @@
             "weight": "560",
             "price": "750",
             "roast_level": "3"
-        },
-        {
-            "name": "Juhlamokka Tummapaahto2",
-            "weight": "345",
-            "price": "556",
-            "roast_level": "4"
-        },
-        {
-            "name": "Juhlamokka Tummapaahto2",
-            "weight": "345",
-            "price": "556",
-            "roast_level": "4"
-        },
-        {
-            "name": "Juhlamokka Tummapaahto2",
-            "weight": "345",
-            "price": "556",
-            "roast_level": "4"
         }
     ]
 }
