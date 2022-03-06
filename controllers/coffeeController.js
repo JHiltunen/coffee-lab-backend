@@ -13,17 +13,19 @@ const get_coffee_list = (req, res) => {
 
 const add_new_coffee = (req, res) => {
 
+    console.log('body: ', req.body);
+
     // create coffee object
-    /*var newCoffee ={
+    var newCoffee ={
         name: req.body.name,
         weight: req.body.weight,
         price: req.body.price,
         roast_level: req.body.roast_level,
-    };*/
+    };
 
    // console.log("New coffee: ", newCoffee);
 
-    res.json(coffeeModel.addCoffee(req.body));
+    res.json(coffeeModel.addCoffee(newCoffee));
 }
 
 const get_coffee_list_search = (req, res) => {
