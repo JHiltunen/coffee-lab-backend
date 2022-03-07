@@ -3,7 +3,8 @@
 Backend for coffee-lab app. Allows you to save information about your favourite coffees. Data is aved to json file on server.
 
 ## Backend flow
-![CoffeeLabBackendFlow](https://user-images.githubusercontent.com/37395957/156987175-911b891b-e6d1-4036-b270-4b9448a7a1de.png)
+![CoffeeLabBackendFlow](https://user-images.githubusercontent.com/37395957/156987322-217a4727-2aa1-4d0c-97d1-57b1240fe21f.png)
+
 
 **NOTE: PUT and DELETE aren't implemented**
 
