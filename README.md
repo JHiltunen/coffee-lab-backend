@@ -23,7 +23,7 @@ These endpoints allows you to interact with the backend.
 ## POST
 `/coffees/` Adds new coffee.
 
-**multipart/form-data**
+**application/x-www-form-urlencoded**
 
 
 | Name          | Required      | Type  | Additional info:|
